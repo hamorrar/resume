@@ -1,0 +1,217 @@
+%-------------------------
+% Resume in Latex
+% Author : Hilal Morrar
+% Based off of: https://github.com/jakegut/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Hilal Morrar} \\ \vspace{1pt}
+    \small 510-520-9271 $|$ \href{mailto:hamorrar@ucsc.edu}{\underline{hamorrar@ucsc.edu}} \\
+    \href{https://www.linkedin.com/in/hilal-morrar/}{\underline{linkedin.com/in/hilal-morrar/}} $|$
+    \href{https://github.com/hamorrar}{\underline{github.com/hamorrar}} $|$
+    \href{https://hilalmorrar.com}{\underline{hilalmorrar.com}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Santa Cruz}{Santa Cruz, CA}
+      {Bachelors of Computer Science}{Sept. 2018 -- June 2022}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Computer Science Undergraduate Teaching Assistant}{March 2020 -- Present}
+      {Baskin School of Engineering - Computer Science and Engineering Department}{Santa Cruz, CA}
+
+      \resumeSubSubheading{Lead Tutor}{March 2020 -- Present}
+        \resumeItemListStart
+          \resumeItem{Leading regular tutoring sessions for Applied Discrete Mathematics, Computer Systems and Assembly Language courses.}
+          \resumeItem{Collaborating and commnicating with Professors and Teaching Assistants to deliver class material.}
+          \resumeItem{Gaining experience in reading code written by others and debugging it to achieve desired behavior.}
+        \resumeItemListEnd
+      
+      \resumeSubSubheading{Reader}{June 2020 -- July 2021}
+        \resumeItemListStart
+          \resumeItem{Worked with Professor and Teaching Assistants to make quizzes, Python programming assignments, and grade them in a timely manner.}
+          \resumeItem{Made a short Python script to automate attendance for Zoom lectures.}
+          \resumeItem{Maintained accurate records of grades with colleagues and submitted them to Canvas Learning Management System regularly.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Applied Discrete Mathematics Learning Assistant}{Sept. 2019 -- December 2020}
+      {UC Santa Cruz Learning Support Services}{Santa Cruz, CA}
+      \resumeItemListStart
+        \resumeItem{Tutored over 100 students in Applied Discrete Math in 4 academic terms.}
+        \resumeItem{Led tutoring sessions for peers to comprehend concepts and practice mathematical proof solving skills.}
+        \resumeItem{Worked closely with supervisors to continually implement optimal tutoring practices.}
+    \resumeItemListEnd
+
+\section{Research}
+    \resumeSubheading
+      {Applied Machine Learning Lab Research Assistant}{Sept. 2020 -- August 2020}
+      {UC Santa Cruz}{Santa Cruz, CA}
+      \resumeItemListStart
+        \resumeItem{Assisted on a project in cognitive electrophysiology and data science under a professor.}
+        \resumeItem{Designed deep machine learning model architectures to make predictions based on time-series EEG data.}
+        \resumeItem{Read literature and gaining deep conceptual and technical understanding of cognitive data analysis.}
+      \resumeItemListEnd
+
+    \resumeSubheading{Co-Principal Investigator}{August 2015 -- June 2018}{Waksman Student Scholars Program}{Tracy, CA}
+      \resumeItemListStart
+        \resumeItem{Taught molecular biology \& bioinformatics concepts and skills as a co-P.I. for two years.}
+        \resumeItem{Published 9 scientific works into a national biotechnology database, while mentoring 35 students each year.}
+      \resumeItemListEnd
+
+    \resumeSubheading{Plant Biology Research Lab Intern}{June 2017 -- August 2017}{Young Scholars Program - UC Davis}{Davis, CA}
+      \resumeItemListStart
+        \resumeItem{Conducted and led a plant biology research project for a professor with the advisement of a graduate student.}
+        \resumeItem{Wrote a formal research paper adhering to journal publication standards and presented project findings.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Distributed Key-Value Store} $|$ \emph{Go, Git, Docker}}{Sept. 2021 -- Decemeber 2021}
+          \resumeItemListStart
+            \resumeItem{Developed the back-end of a distributed, fault tolerant, and sharded key-value store using Go and the Gin framework.}
+            \resumeItem{Worked in a team environment utilizing Git branches to organize feature implementation according to system specifications.}
+            \resumeItem{Led regular team meetings to assess progress and discuess system design.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Unofficial UCSC Student Guide} $|$ \emph{Hugo, Git, Go}}{August 2021 -- Present}
+          \resumeItemListStart
+            \resumeItem{Work in Progress student guide for all apsects relating to the student experience at UC Santa Cruz.}
+            \resumeItem{Intended to share the expertise and experiences of UC Santa Cruz students to help underclassmen and prospective students naviagte campus life.}
+            \resumeItem{Working in a team environment using Git and Hugo web framework.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, Python, Go, Assembly, MATLAB, R, HTML} \\
+     \textbf{Frameworks/Libraries}{: Hugo, Gin, PyTorch, TensorFlow, NumPy, pandas, Keras, scikit-learn} \\
+     \textbf{Developer Tools}{: Git, Docker, VS Code, Vim, Command Line, Google Colabs, Jupyter Notebooks, Linux/Unix, Windows, MacOS}}}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
