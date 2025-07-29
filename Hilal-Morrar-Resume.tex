@@ -115,40 +115,49 @@
   \resumeSubHeadingListStart
     \resumeSubheading{Software Engineer Intern}{May 2024 -- August 2024}{Cisco Systems - Duo Security}{San Francisco, CA}
     \resumeItemListStart
-      \resumeItem{Improved an internal performance load testing tool by adding a feature using Python, AWS EC2, and MySQL to dynamically create simulated customers and production HTTP requests.}
-      \resumeItem{Executed load testing suites with GitHub CI/CD pipelines to monitor and validate software release performance metrics for 50k users using Datadog, Grafana, and Kibana dashboards for observability and incident response.}
-      \resumeItem{Diagnosed and fixed deployment issues in Kubernetes clusters with Python and Docker, contributing to improved system reliability and reducing the risk of service degradation or on-call incidents.}
-
+      \resumeItem{Added a feature to an internal performance load testing tool using Python, AWS EC2, and MySQL to dynamically create simulated customers and production HTTP requests.}
+      \resumeItem{Created reports for software release tests executed with GitHub CI/CD pipelines to monitor performance metrics for 
+      \textbf{50,000+ concurrent users} with Datadog, Grafana, and Kibana dashboards.}
+      \resumeItem{Fixed faulty pod monitoring in Kubernetes deployments using Python to eliminate silent job failures or stalled pods and \textbf{saved about 10\%} on AWS resources.}
     \resumeItemListEnd
 
     \resumeSubheading{Software Engineer Intern}{May 2023 -- August 2023}{Stealth Startup}{Remote}
     \resumeItemListStart
-      \resumeItem{Designed and implemented a RESTful API for a distributed, fault tolerant, consistent, and sharded key-value store using Go and Docker.}
+      \resumeItem{Designed a RESTful API and implemented DELETE request functionality for a distributed, fault tolerant, and consistent key-value store using Go and Docker.}
+      \resumeItem{Developed internal API routes to support dynamic server coordination, data rebalancing, and Bash scripts to automate setup/teardown processes to \textbf{improve development efficiency by 30\%}.}
       \resumeItem{Utilized Goroutines for concurrency when handling client and internal HTTP requests for system communication.}
-      \resumeItem{Developed resharding algorithm and internal API routes to support dynamic replica coordination and data rebalancing, and Bash scripts to automate setup/teardown processes to improve development efficiency by 30\%.}
     \resumeItemListEnd
 
     \resumeSubheading{Machine Learning Engineer}{September 2020 -- August 2021}{Applied Machine Learning Lab}{Santa Cruz, CA}
       \resumeItemListStart
-        \resumeItem{Led the design and training efforts of various neural network model architectures to make predictions based on time-series data with PyTorch.}
-        \resumeItem{Achieved 95\% accuracy as measured by model validation metrics by tuning machine learning models with hyperparameter optimization, regularization, and pruning.}
-        \resumeItem{Reduced model training time by 50\% by improving data processing pipeline and distributing training in a Kubernetes GPU cloud cluster.}
+        \resumeItem{Led the design and training efforts of various model architectures for time-series data with PyTorch.}
+        \resumeItem{Achieved \textbf{95\% accuracy} by tuning machine learning models with hyperparameter optimization.}
+        \resumeItem{Distributed model training in a Kubernetes GPU cloud cluster for a \textbf{50\% reduction in training time}.}
       \resumeItemListEnd
   
     \resumeSubheading{Frontend Software Engineer}{July 2020 -- September 2020}{Resilient Renewable Efficient Energy Systems}{Santa Cruz, CA}
       \resumeItemListStart
-        \resumeItem{Built a user interface to register IoT devices using React, JavaScript, and AWS S3 for data storage in collaboration with hardware and product teams.}
-        \resumeItem{Coordinated end to end integration with backend services on AWS EC2, ensuring smooth device onboarding and monitoring workflows.}
-        \resumeItem{Raised user experience and accessibility scores by 17\% based on Lighthouse audits by optimizing data handling, adding client-side input validation, and implementing UI fixes.}
+        \resumeItem{Built a registration UI using React, JavaScript, and AWS S3 for an IoT device with hardware and product teams.}
+        \resumeItem{Coordinated end to end integration with backend services on AWS EC2 to ensure smooth device onboarding.}
+        \resumeItem{Raised user experience and accessibility scores by 17\% based on Lighthouse audits by optimizing data handling and adding client-side input validation.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
   \resumeSubHeadingListStart
+    \resumeProjectHeading{\textbf{JuiceFS} $|$ \emph{AWS EC2, AWS S3, GitHub, Go, PostgreSQL, Python}}{}
+      \resumeItemListStart
+        \resumeItem{Contributed to JuiceFS, an open source, high performance, cloud native, distributed file system.}
+        \resumeItem{Implemented a storage interface in Go that resulted in \textbf{up to 14\% improvement in read/write metrics} for files larger than 10Mb using AWS and PostgreSQL.}
+        \resumeItem{Automated performance tests in Python with a dual benchmarking workflow to collect data and validate the custom storage backend.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
     \resumeProjectHeading{\textbf{Connect4 Artificial Intelligence Agent} $|$ \emph{Python}}{}
       \resumeItemListStart
-        \resumeItem{Developed an AI agent for Connect4 using heuristic evaluation to simulate strategic gameplay across multiple player configurations.}
+        \resumeItem{Developed an AI agent using heuristic evaluation to simulate strategic gameplay for multiple player configurations.}
         \resumeItem{Programmed game state tracking and board evaluation algorithms to support turn-based decision making.}
         \resumeItem{Engineered gameplay framework to support modular AI, human, and random players for dynamic matchups.}
       \resumeItemListEnd
@@ -158,11 +167,14 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading{University of Texas at Austin}{August 2023 -- December 2024}{Masters of Science, Computer Science}{Austin, Texas}
-      \resumeItemListStart
-        \resumeItem{Coursework: Artificial Intelligence, Database Systems, Distributed Systems, Prediction in Computer Architecture}
-    \resumeItemListEnd
+    %   \resumeItemListStart
+    %     \resumeItem{Coursework: Computer Networks, Database Systems, Distributed Systems, Prediction in Computer Architecture}
+    % \resumeItemListEnd
 
     \resumeSubheading{University of California, Santa Cruz}{September 2018 -- June 2022}{Bachelors of Science, Computer Science}{Santa Cruz, CA}
+    %   \resumeItemListStart
+    %     \resumeItem{Coursework: Algorithms, Artificial Intelligence, Data Structures, Machine Learning, Software Engineering, Statistics}
+    % \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %-----------PROGRAMMING SKILLS-----------
