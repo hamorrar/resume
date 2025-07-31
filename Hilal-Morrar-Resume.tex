@@ -3,7 +3,6 @@
 % Author : Hilal Morrar
 % Based off of: https://github.com/jakegut/resume
 %------------------------
-
 \documentclass[letterpaper,11pt]{article}
 
   \usepackage{latexsym}
@@ -19,18 +18,8 @@
   \usepackage{tabularx}
   \input{glyphtounicode}
 
-
-  %----------FONT OPTIONS----------
-  % sans-serif
-  % \usepackage[sfdefault]{FiraSans}
-  % \usepackage[sfdefault]{roboto}
-  % \usepackage[sfdefault]{noto-sans}
-  % \usepackage[default]{sourcesanspro}
-
-  % serif
-  % \usepackage{CormorantGaramond}
-  % \usepackage{charter}
-
+  % Font
+  \usepackage{charter}
 
   \pagestyle{fancy}
   \fancyhf{} % clear all header and footer fields
@@ -103,12 +92,23 @@
 \begin{document}
 
 \begin{center}
-  \textbf{\Huge \scshape Hilal Morrar} \\ \vspace{1pt}
+  \textbf{\Huge Hilal Morrar} \\ \vspace{1pt}
   \small 510-520-9271 $|$ \href{mailto:hilalmorrar@gmail.com}{\underline{hilalmorrar@gmail.com}} $|$ \href{https://hilalmorrar.com}{\underline{hilalmorrar.com/}} $|$ U.S. Citizen
 \end{center}
-    % \href{https://www.linkedin.com/in/hilal-morrar/}{\underline{linkedin.com/in/hilal-morrar/}} $|$
-    % \href{https://github.com/hamorrar}{\underline{github.com/hamorrar}} $|$
-    % \href{https://hilalmorrar.com}{\underline{hilalmorrar.com/}} \end{center}
+
+  %-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading{University of Texas at Austin}{August 2023 -- December 2024}{Masters of Science, Computer Science}{Austin, Texas}
+    %   \resumeItemListStart
+    %     \resumeItem{Coursework: Computer Networks, Database Systems, Distributed Systems, Prediction in Computer Architecture}
+    % \resumeItemListEnd
+
+    \resumeSubheading{University of California, Santa Cruz}{September 2018 -- June 2022}{Bachelors of Science, Computer Science}{Santa Cruz, CA}
+    %   \resumeItemListStart
+    %     \resumeItem{Coursework: Algorithms, Artificial Intelligence, Data Structures, Machine Learning, Software Engineering, Statistics}
+    % \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -161,20 +161,6 @@
         \resumeItem{Programmed game state tracking and board evaluation algorithms to support turn-based decision making.}
         \resumeItem{Engineered gameplay framework to support modular AI, human, and random players for dynamic matchups.}
       \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-  %-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading{University of Texas at Austin}{August 2023 -- December 2024}{Masters of Science, Computer Science}{Austin, Texas}
-    %   \resumeItemListStart
-    %     \resumeItem{Coursework: Computer Networks, Database Systems, Distributed Systems, Prediction in Computer Architecture}
-    % \resumeItemListEnd
-
-    \resumeSubheading{University of California, Santa Cruz}{September 2018 -- June 2022}{Bachelors of Science, Computer Science}{Santa Cruz, CA}
-    %   \resumeItemListStart
-    %     \resumeItem{Coursework: Algorithms, Artificial Intelligence, Data Structures, Machine Learning, Software Engineering, Statistics}
-    % \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %-----------PROGRAMMING SKILLS-----------
